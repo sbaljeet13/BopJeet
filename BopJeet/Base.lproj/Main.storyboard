@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BopJeet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gesture" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zT-Nc-dNh">
+                                <rect key="frame" x="270" y="158" width="61" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remark" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="600" translatesAutoresizingMaskIntoConstraints="NO" id="Ps8-aA-ocA">
+                                <rect key="frame" x="0.0" y="441" width="600" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="147" id="sSO-Fg-jDD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="sSO-Fg-jDD"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BopJeetToy" translatesAutoresizingMaskIntoConstraints="NO" id="CAa-Wh-9Eb">
+                                <rect key="frame" x="240" y="221" width="120" height="120"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="8ae-xY-Lhq"/>
+                                    <constraint firstAttribute="width" constant="120" id="u1j-iO-8uk"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ATF-KW-xMW" appends="YES" id="Fg3-LG-CnX"/>
+                                    <outletCollection property="gestureRecognizers" destination="pwd-E7-16A" appends="YES" id="czc-FZ-Geo"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaF-mG-Vbb">
+                                <rect key="frame" x="263" y="470" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7OH-r8-mQh">
+                                <rect key="frame" x="327" y="470" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="CAa-Wh-9Eb" firstAttribute="centerX" secondItem="3zT-Nc-dNh" secondAttribute="centerX" id="0yf-uo-acG"/>
+                            <constraint firstItem="eaF-mG-Vbb" firstAttribute="baseline" secondItem="7OH-r8-mQh" secondAttribute="baseline" id="LzU-VO-UEg"/>
+                            <constraint firstItem="eaF-mG-Vbb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-12" id="OcY-RZ-HJ4"/>
+                            <constraint firstItem="7OH-r8-mQh" firstAttribute="leading" secondItem="eaF-mG-Vbb" secondAttribute="trailing" constant="14" id="UME-hG-s1Q"/>
+                            <constraint firstItem="eaF-mG-Vbb" firstAttribute="top" secondItem="Ps8-aA-ocA" secondAttribute="bottom" constant="8" symbolic="YES" id="XTg-XT-rCw"/>
+                            <constraint firstItem="CAa-Wh-9Eb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-19" id="fJE-Oi-VEb"/>
+                            <constraint firstItem="Ps8-aA-ocA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="hdM-2J-cpX"/>
+                            <constraint firstItem="CAa-Wh-9Eb" firstAttribute="centerX" secondItem="Ps8-aA-ocA" secondAttribute="centerX" id="jl1-Ld-Z9Q"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ps8-aA-ocA" secondAttribute="bottom" constant="138" id="jv3-lC-7Ee"/>
+                            <constraint firstItem="CAa-Wh-9Eb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ysh-k1-CGT"/>
+                            <constraint firstItem="3zT-Nc-dNh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="138" id="ytT-64-T3n"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="pwd-E7-16A" appends="YES" id="WTY-Lu-M5s"/>
+                            <outletCollection property="gestureRecognizers" destination="2vU-gY-mRu" appends="YES" id="3TS-2H-4F0"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="command" destination="3zT-Nc-dNh" id="Glo-Gr-5Qu"/>
+                        <outlet property="remark" destination="Ps8-aA-ocA" id="2FE-kr-m2O"/>
+                        <outlet property="scoreLabel" destination="7OH-r8-mQh" id="aAp-II-a1E"/>
+                        <outlet property="toy" destination="CAa-Wh-9Eb" id="YVW-MU-aAf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ATF-KW-xMW">
+                    <connections>
+                        <action selector="handleTap:" destination="BYZ-38-t0r" id="biI-y4-L9O"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="pwd-E7-16A">
+                    <connections>
+                        <action selector="handleSwipe:" destination="BYZ-38-t0r" id="dgb-Qx-cMM"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <pinchGestureRecognizer id="2vU-gY-mRu">
+                    <connections>
+                        <action selector="handlePinch:" destination="BYZ-38-t0r" id="gdy-9K-PiQ"/>
+                    </connections>
+                </pinchGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="215" y="424"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BopJeetToy" width="240" height="240"/>
+    </resources>
+</document>
